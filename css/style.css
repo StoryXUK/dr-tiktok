@@ -236,6 +236,8 @@ h3, h4, h5 {
 	color:#db543e;
 }
 
+.pb20 {padding-bottom: 20px;}
+
 
 /* ==========================
 2. Navbar
@@ -1024,3 +1026,18 @@ h3, h4, h5 {
 @media (max-width: 479px) {
 	
 }
+
+
+#soundMessage {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: rgba(0, 0, 0, 0.7); /* Dark background for visibility */
+	color: white;
+	padding: 10px 20px;
+	font-size: 16px;
+	border-radius: 5px;
+	z-index: 10;
+	text-align: center;
+  }

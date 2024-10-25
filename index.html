@@ -75,6 +75,10 @@
 							target="_blank">
 							Contact Me On WhatsApp
 						</a>
+						<a href="mailto:david@davidredfearn.com"
+							target="_blank">
+							Send Email
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -90,69 +94,49 @@
 	<section class="section welcome">
 		<div class="container">
 			<div class="row">
-
 				<div class="col-12">
-					<!-- 1:1 aspect ratio -->
-					<div class="embed-responsive embed-responsive-1by1 position-relative">
+					<!-- 1:1 aspect ratio video container -->
+					<div class="embed-responsive embed-responsive-1by1 position-relative" style="z-index: 1;">
 						<video id="video" class="embed-responsive-item" autoplay muted loop playsinline>
 							<source src="video/david_1.mp4" type="video/mp4">
 							Your browser does not support the video tag.
 						</video>
 						<!-- Overlay Message for Sound -->
 						<div id="soundMessage" class="position-absolute text-center"
-							style="top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.7); color: white; padding: 10px 20px; font-size: 16px; border-radius: 5px; z-index: 10; pointer-events: none;">
+							style="top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(0, 0, 0, 0.7); color: white; padding: 10px 20px; font-size: 16px; border-radius: 5px; z-index: 2; pointer-events: none;">
 							Click anywhere for sound 🔊
 						</div>
 					</div>
-
-					<script>
-						const video = document.getElementById('video');
-						const soundMessage = document.getElementById('soundMessage');
-
-						// Toggle mute without pausing the video
-						video.addEventListener('click', function (event) {
-							video.muted = !video.muted; // Toggle mute
-							if (!video.muted) {
-								soundMessage.style.display = 'none'; // Hide the message when sound is on
-							}
-						});
-
-						// Optional: Hide the message automatically after a few seconds
-						setTimeout(() => {
-							soundMessage.style.display = 'none';
-						}, 5000); // Message hides after 5 seconds
-					</script>
-
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<section class="section welcome">
+	
+	<section class="section welcome" style="position: relative; z-index: 10;">
 		<div class="container">
 			<div class="row">
-
-
-
-
-				<div class="col-sm-12 col-md-8 col-md-offset-2">
+				<div class="col-sm-12 col-md-8 offset-md-2">
 					<div class="page-title">
 						<h2 class="lead">Make Your Next Party Unforgettable</h2>
 						<p class="sublead pb20">Ready to bring a spark of wonder to your event? David Redfearn, one of
-							the
-							UK’s most sought-after magicians, captivates guests with jaw-dropping illusions and
+							the UK’s most sought-after magicians, captivates guests with jaw-dropping illusions and
 							unforgettable sleight of hand. Whether it's a birthday, anniversary, or any celebration,
 							David’s magic turns ordinary moments into lasting memories. Enquire now to make your next
 							party an experience they’ll be talking about for years!</p>
-
-						<a href="mailto:david@davidredfearn.com" title="" class="btn btn-default">Get In Touch</a>
-
 					</div>
+					
+					<!-- Get In Touch Button below text -->
+					
+						<a target="_blank" href="mailto:david@davidredfearn.com" title="" style="z-index: 20; position: relative;">
+							Get In Touch
+						</a>
+					
 				</div>
 			</div>
 		</div>
-
 	</section>
+	
+	
 
 	<!-- COMEDIAN SECTION -->
 	<!-- <div class="section comedian">
@@ -403,6 +387,7 @@
 	<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/video.js"></script>
 
 
 	<!-- sendmail -->

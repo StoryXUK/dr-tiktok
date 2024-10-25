@@ -94,24 +94,31 @@
 
 			<div class="row">
 
-				<div class="col-sm-12 col-md-7">
+				<div class="col-12">
 					<!-- 16:9 aspect ratio -->
 					<div class="embed-responsive embed-responsive-16by9">
-						<video width="560" height="315" controls>
+						<video id="video" class="embed-responsive-item" autoplay muted loop playsinline>
 							<source src="video/david_1.mp4" type="video/mp4">
 							Your browser does not support the video tag.
 						</video>
 					</div>
 				</div>
+				
+				<script>
+					// Select the video element
+					const video = document.getElementById('video');
+					
+					// Unmute video on the first click
+					video.addEventListener('click', function() {
+						if (video.muted) {
+							video.muted = false;
+						} else {
+							video.muted = true; // Toggle sound on and off with each click
+						}
+					});
+				</script>
 
-				<div class="col-sm-12 col-md-5">
-					<div class="video-desc">
-						<div class="video-heading">
-							Baron Odon
-						</div>
-						<p>laugh was before you die, there's nothing prohibiting and asks you to pay for a laugh.</p>
-					</div>
-				</div>
+				
 				
 
 

@@ -145,14 +145,7 @@ a:hover {
 
 /* Subtle pulse animation */
 @keyframes pulse {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 5px #db543e, 0 0 10px #ff6a4d, 0 0 15px #ff9278;
-    }
-    50% {
-        transform: scale(1.05);
-        box-shadow: 0 0 8px #db543e, 0 0 12px #ff6a4d, 0 0 18px #ff9278;
-    }
+  
     100% {
         transform: scale(1);
         box-shadow: 0 0 5px #db543e, 0 0 10px #ff6a4d, 0 0 15px #ff9278;
@@ -170,7 +163,8 @@ a:hover {
     margin-top: 50px;
 	margin-bottom: 50px;
     cursor: pointer;
-    
+    box-shadow: 0 0 1px #db543e, 0 0 3px #ff6a4d, 0 0 5px #ff9278;
+   
 }
 
 /* Button hover effect */

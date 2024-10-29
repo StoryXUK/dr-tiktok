@@ -170,8 +170,7 @@ a:hover {
     margin-top: 50px;
 	margin-bottom: 50px;
     cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
-    animation: pulse 2s infinite ease-in-out;
+    
 }
 
 /* Button hover effect */

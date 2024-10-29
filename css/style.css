@@ -142,6 +142,47 @@ a:hover {
     border-color: #db543e;
 	color:#fff;
 }
+
+/* Subtle pulse animation */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 5px #db543e, 0 0 10px #ff6a4d, 0 0 15px #ff9278;
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 0 8px #db543e, 0 0 12px #ff6a4d, 0 0 18px #ff9278;
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 5px #db543e, 0 0 10px #ff6a4d, 0 0 15px #ff9278;
+    }
+}
+
+/* Button styling */
+.btn-book {
+    color: #fff;
+    background-color: #1B1B1B;
+    border: 2px solid #1B1B1B;
+    padding: 6px 35px;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 50px;
+	margin-bottom: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    animation: pulse 2s infinite ease-in-out;
+}
+
+/* Button hover effect */
+.btn-book:hover {
+    background-color: #db543e;
+    border-color: #db543e;
+    color: #fff;
+    animation: none; /* Optional: stops pulsing on hover */
+    box-shadow: 0 0 6px #db543e, 0 0 10px #ff6a4d, 0 0 15px #ff9278;
+}
+
 .bg-grey{
 	background-color: #E9E9E9;
 }
